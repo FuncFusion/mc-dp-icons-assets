@@ -145,11 +145,14 @@ color_replacements = {
     "#453C2F": "#B63021",
     "#865107": "#7C120D"
 }
-out_folder = path.abspath("xmased_icons")
+in_folder = r'C:\Users\bth123\_coding\mc-dp-icons-assets\icons\future\files\folders'
+out_folder = r'C:\Users\bth123\_coding\mc-dp-icons-assets\icons\future\xmasized'
 
 
-for folder_path, _, filenames in walk(path.abspath("icons")):
+for folder_path, _, filenames in walk(in_folder):
     for filename in filenames:
+        if not filename.endswith("png"):
+            continue
         target_icon = np.array(Image.open(path.join(folder_path, filename)))
 
         # Replacing constant parts
