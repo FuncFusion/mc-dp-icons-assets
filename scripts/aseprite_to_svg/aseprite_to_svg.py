@@ -2,7 +2,7 @@ import aseprite
 
 
 scale = 50
-svg = '<svg viewBox="0 0 {0} {1}" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+svg = '<svg viewBox="0 0 {0} {1}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
 rect_template = '<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#{fill}" {opacity}/>'
 
 
@@ -46,19 +46,21 @@ def convert(path):
 		rect["h"] *= scale
 		rects += rect_template.format(**rect)
 
-	return svg.format((maxx-minx)*scale, (maxy-miny)*scale, rects)
+	return svg.format((maxx-minx + (1 if maxx-minx % 2 == 1 else 0))*scale, (maxy-miny + (1 if maxy-miny % 2 == 1 else 0))*scale, rects)
 
 
 if __name__ == "__main__":
-	# with open("svg.svg","w")as f:
-	# 	f.write(convert("loom.aseprite"))
 	from os import walk
+	from os.path import abspath
+	import webbrowser
 
-	icons_path = "../../icons/current/"
+	icons_path = "../../icons/future/files/coding/" # <- SLASH IN THE END OF PATH IS NECCESSARY
 
-	for _, __, files in walk(icons_path):
+	for root, __, files in walk(icons_path):
 		for filename in files:
 			if filename.endswith(".aseprite"):
-				with open(filename[:-9]+".svg", "w")as f:
+				svg_path = icons_path+filename[:-9]+".svg"
+				with open(svg_path, "w")as f:
 					f.write(convert(icons_path+filename))
-				print("Processed " filename)
+					# webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
+				print("Processed " + filename)
