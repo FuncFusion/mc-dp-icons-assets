@@ -2,7 +2,8 @@ import aseprite
 
 
 scale = 50
-svg = '<svg viewBox="0 0 {0} {1}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+# svg = '<svg viewBox="0 0 {0} {1}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+svg = '<svg viewBox="0 0 {0} {1}" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
 rect_template = '<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#{fill}" {opacity}/>'
 
 
