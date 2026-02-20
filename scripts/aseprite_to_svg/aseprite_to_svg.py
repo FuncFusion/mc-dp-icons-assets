@@ -55,7 +55,7 @@ if __name__ == "__main__":
 	from os.path import abspath
 	import webbrowser
 
-	icons_path = "../../icons/future/files/coding/" # <- SLASH IN THE END OF PATH IS NECCESSARY
+	icons_path = "../../icons/future/" # <- SLASH IN THE END OF PATH IS NECCESSARY
 
 	for root, __, files in walk(icons_path):
 		for filename in files:
