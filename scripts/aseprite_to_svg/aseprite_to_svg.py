@@ -82,20 +82,20 @@ def convert(path):
 	return svg.format((maxx-minx + (1 if maxx-minx % 2 == 1 else 0))*scale, (maxy-miny + (1 if maxy-miny % 2 == 1 else 0))*scale, elements)
 
 
-print(convert("../../icons/current/fsh.aseprite"))
+# print(convert("../../icons/current/fsh.aseprite"))
 
-# if __name__ == "__main__":
-# 	from os import walk
-# 	from os.path import abspath
-# 	import webbrowser
+if __name__ == "__main__":
+	from os import walk
+	from os.path import abspath
+	import webbrowser
 
-# 	icons_path = "../../icons/future/" # <- SLASH IN THE END OF PATH IS NECCESSARY
+	icons_path = "../../icons/future/" # <- SLASH IN THE END OF PATH IS NECCESSARY
 
-# 	for root, __, files in walk(icons_path):
-# 		for filename in files:
-# 			if filename.endswith(".aseprite"):
-# 				svg_path = icons_path+filename[:-9]+".svg"
-# 				with open(svg_path, "w")as f:
-# 					f.write(convert(icons_path+filename))
-# 					# webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
-# 				print("Processed " + filename)
+	for root, __, files in walk(icons_path):
+		for filename in files:
+			if filename.endswith(".aseprite"):
+				svg_path = icons_path+filename[:-9]+".svg"
+				with open(svg_path, "w")as f:
+					f.write(convert(icons_path+filename))
+					# webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
+				print("Processed " + filename)
