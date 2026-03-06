@@ -82,14 +82,14 @@ def convert(path):
 	return svg.format((maxx-minx + (1 if maxx-minx % 2 == 1 else 0))*scale, (maxy-miny + (1 if maxy-miny % 2 == 1 else 0))*scale, elements)
 
 
-# print(convert("../../icons/current/fsh.aseprite"))
+# print(convert("../icons/current/misc_file.aseprite"))
 
 if __name__ == "__main__":
 	from os import walk
 	from os.path import abspath
 	import webbrowser
 
-	icons_path = "../../icons/future/" # <- SLASH IN THE END OF PATH IS NECCESSARY
+	icons_path = "../icons/future/" # <- SLASH IN THE END OF PATH IS NECCESSARY
 
 	for root, __, files in walk(icons_path):
 		for filename in files:
