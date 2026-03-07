@@ -89,7 +89,7 @@ if __name__ == "__main__":
 	from os.path import abspath
 	import webbrowser
 
-	icons_path = "../icons/current/"
+	icons_path = "../icons/future/"
 	icons_path += "/" if not icons_path.endswith("/") else ""
 
 	for root, __, files in walk(icons_path):
