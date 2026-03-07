@@ -1,4 +1,5 @@
 import aseprite
+from aseprite_to_png import build_png
 
 # xmas_folder_template = aseprite.read_aseprite_file("folder_xmas.aseprite")
 
@@ -40,14 +41,20 @@ def xmasize(path: str):
 	for index, cel in enumerate(xmased_icon["frames"][0]["cels"]):
 		xmased_icon["frames"][0]["cels"][index]["layer"] = index
 
-	aseprite.write_aseprite_file(path.replace(".aseprite", "_xmas.aseprite"), xmased_icon)
+	out_path = path.replace(".aseprite", "_xmas.aseprite")
+	aseprite.write_aseprite_file(out_path, xmased_icon)
+	return out_path
 
 
 # xmasize("../icons/future/jetbrains_folder.aseprite")
 
 
 exlusions = (
-	"overlay_folder.aseprite",
+	"overlay_folder",
+	"assets_folder",
+	"data_folder",
+	"namespace_folder",
+	"src_folder"
 )
 
 
@@ -63,4 +70,5 @@ if __name__ == "__main__":
 		for filename in files:
 			if filename.endswith("_folder.aseprite") and not any(True for exlusion in exlusions if exlusion in filename):
 				print("Processing "+filename)
-				xmasize(icons_path+filename)
+				saved_path = xmasize(icons_path+filename)
+				build_png(saved_path)
