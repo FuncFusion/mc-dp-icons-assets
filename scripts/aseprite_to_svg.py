@@ -62,6 +62,8 @@ def convert(path):
 		else:
 			element_data.append(rect)
 	
+	minx = miny = min(minx, miny)
+	maxx = maxy = max(maxx, maxy)
 	
 	for element in element_data:
 		type = element["type"]
@@ -85,12 +87,15 @@ def convert(path):
 # print(convert("../icons/current/misc_file.aseprite"))
 
 if __name__ == "__main__":
-	from os import walk
+	from os import walk, getcwd
 	from os.path import abspath
 	import webbrowser
 
-	icons_path = "../icons/future/"
+	icons_path = "icons/current/"
 	icons_path += "/" if not icons_path.endswith("/") else ""
+	# in case script is not running from the root of repo
+	if getcwd().endswith("scripts"):
+		icons_path = "../" + icons_path
 
 	for root, __, files in walk(icons_path):
 		for filename in files:
