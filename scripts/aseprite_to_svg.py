@@ -9,99 +9,102 @@ group_start_template = '<g {opacity}>'
 
 
 def convert(path):
-	sprite = aseprite.read_aseprite_file(path)
-	minx = sprite["w"]
-	miny = sprite["h"]
-	maxx = 0
-	maxy = 0
-	elements = ""
-	element_data = []
+    sprite = aseprite.read_aseprite_file(path)
+    minx = sprite["w"]
+    miny = sprite["h"]
+    maxx = 0
+    maxy = 0
+    elements = ""
+    element_data = []
 
-	in_group: bool = False
-	for layer, meta in zip( sprite["frames"][0]["cels"], sprite["layers"]):
-		name = meta["name"]
+    in_group: bool = False
+    for layer, meta in zip( sprite["frames"][0]["cels"], sprite["layers"]):
+        name = meta["name"]
 
-		x = layer["x"]
-		y = layer["y"]
-		w = layer["w"]
-		h = layer["h"]
-		if x < minx:
-			minx = x
-		if y < miny:
-			miny = y
-		if (mx:=x+w) > maxx:
-			maxx = mx
-		if (my:=y+h) > maxy:
-			maxy = my
-	
-		rect = {
-			"type": "rect",
-			"x": x, 
-			"y": y,
-			"w": w,
-			"h": h,
-			"fill": layer["pixels"][:3].hex(),
-			"opacity": "" if layer["pixels"][3] == 255 or in_group or name in ("gs", "ge") else f'opacity="{str(layer["pixels"][3]/255)[1:]}"'
-		}
+        x = layer["x"]
+        y = layer["y"]
+        w = layer["w"]
+        h = layer["h"]
+        if x < minx:
+            minx = x
+        if y < miny:
+            miny = y
+        if (mx:=x+w) > maxx:
+            maxx = mx
+        if (my:=y+h) > maxy:
+            maxy = my
+    
+        rect = {
+            "type": "rect",
+            "x": x, 
+            "y": y,
+            "w": w,
+            "h": h,
+            "fill": layer["pixels"][:3].hex(),
+            "opacity": "" if layer["pixels"][3] == 255 or in_group or name in ("gs", "ge") else f'opacity="{str(layer["pixels"][3]/255)[1:]}"'
+        }
 
-		if name == "gs":
-			element_data.append({
-				"type": "group_start",
-				"opacity": f'opacity="{str(layer["pixels"][3]/255)[1:]}"'
-			})
-			element_data.append(rect)
-			in_group = True
+        if name == "gs":
+            element_data.append({
+                "type": "group_start",
+                "opacity": f'opacity="{str(layer["pixels"][3]/255)[1:]}"'
+            })
+            element_data.append(rect)
+            in_group = True
 
-		elif name == "ge" and in_group:
-			element_data.append(rect)
-			element_data.append({
-				"type": "group_end"
-			})
-			in_group = False
+        elif name == "ge" and in_group:
+            element_data.append(rect)
+            element_data.append({
+                "type": "group_end"
+            })
+            in_group = False
 
-		else:
-			element_data.append(rect)
-	
-	minx = miny = min(minx, miny)
-	maxx = maxy = max(maxx, maxy)
-	
-	for element in element_data:
-		type = element["type"]
+        else:
+            element_data.append(rect)
 
-		if type == "group_start":
-			elements += group_start_template.format(**element)
+    true_width = maxx - minx
+    true_height = maxy - miny
+    max_side = max(true_width, true_height)
+    offsetx = (max_side - true_width) // 2
+    offsety = (max_side - true_height + 1) // 2
+    
+    for element in element_data:
+        type = element["type"]
 
-		elif type == "group_end":
-			elements += "</g>"
+        if type == "group_start":
+            elements += group_start_template.format(**element)
 
-		elif type == "rect":
-			element["x"] = (element["x"] - minx) * scale
-			element["y"] = (element["y"] - miny) * scale
-			element["w"] *= scale
-			element["h"] *= scale
-			elements += rect_template.format(**element)
+        elif type == "group_end":
+            elements += "</g>"
 
-	return svg.format((maxx-minx + (1 if maxx-minx % 2 == 1 else 0))*scale, (maxy-miny + (1 if maxy-miny % 2 == 1 else 0))*scale, elements)
+        elif type == "rect":
+            element["x"] = (element["x"] - minx + offsetx) * scale
+            element["y"] = (element["y"] - miny + offsety) * scale
+            element["w"] *= scale
+            element["h"] *= scale
+            elements += rect_template.format(**element)
+
+    return svg.format(max_side*scale, max_side*scale, elements)
 
 
 # print(convert("../icons/current/misc_file.aseprite"))
 
 if __name__ == "__main__":
-	from os import walk, getcwd
-	from os.path import abspath
-	import webbrowser
+    from os import walk, getcwd
+    from os.path import abspath
+    import webbrowser
 
-	icons_path = "icons/current/"
-	icons_path += "/" if not icons_path.endswith("/") else ""
-	# in case script is not running from the root of repo
-	if getcwd().endswith("scripts"):
-		icons_path = "../" + icons_path
+    icons_path = "icons/future/"
+    icons_path += "/" if not icons_path.endswith("/") else ""
+    # in case script is not running from the root of repo
+    if getcwd().endswith("scripts"):
+        icons_path = "../" + icons_path
 
-	for root, __, files in walk(icons_path):
-		for filename in files:
-			if filename.endswith(".aseprite"):
-				svg_path = icons_path+filename[:-9]+".svg"
-				with open(svg_path, "w")as f:
-					f.write(convert(icons_path+filename))
-					# webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
-				print("Processed " + filename)
+    for root, __, files in walk(icons_path):
+        for filename in files:
+            if filename.endswith(".aseprite"):
+                svg_path = icons_path+filename[:-9]+".svg"
+                with open(svg_path, "w")as f:
+                    f.write(convert(icons_path+filename))
+                    # webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
+                print("Processed " + filename)
