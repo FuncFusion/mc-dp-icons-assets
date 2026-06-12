@@ -42,6 +42,6 @@ def crop_and_upscale_images(input_folder, output_folder, target_size=1000):
                     print(f"Processed and saved: {output_path}")
 
 if __name__ == "__main__":
-    input_dir = "../icons/current/"
-    output_dir = "../icons/current/us/"
+    input_dir = "./icons/temp"
+    output_dir = "./icons/temp_us/"
     crop_and_upscale_images(input_dir, output_dir)
