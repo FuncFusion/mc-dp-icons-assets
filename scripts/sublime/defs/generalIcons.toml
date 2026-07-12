@@ -1,0 +1,355 @@
+[android_file]
+extensions = ["aab", "aar", "apk", "apks", "axml", "dalvik", "dex", "smali"]
+
+[ant_file]
+extensions = ["ant"]
+filenames = ["ant.xml", "build.xml"]
+
+[archive_file]
+extensions = ["mcaddon", "mceditoraddon", "mcpack", "mcproject", "mctemplate", "mcworld", "7z", "ace", "arj", "asar", "bak", "br", "bz2", "bzip2", "cab", "gz", "gzip", "iso", "lz4", "lzma", "pak", "rar", "rpm", "squashfs", "sublime-package", "tar", "tgz", "txz", "tz", "vhd", "xz", "zip", "zst"]
+
+[archive_folder]
+foldernames = ["archive", "archived", "archives", "lib", "libs", "packages", "pkg"]
+
+[aseprite_extension_file]
+extensions = ["aseprite-extension"]
+
+[aseprite_file]
+extensions = ["ase", "aseprite"]
+
+[audio_file]
+extensions = ["ogg", "fsb", "aac", "ac3", "aif", "aiff", "amr", "ape", "au", "dts", "f4a", "f4b", "flac", "gsm", "m4a", "m4b", "m4p", "mid", "midi", "mka", "mod", "mp2", "mp3", "mpc", "oga", "opus", "pda", "ra", "spx", "wav", "wma", "wv"]
+
+[audio_folder]
+foldernames = ["sounds", "audio"]
+
+[binary_file]
+extensions = ["a", "bin", "blob", "bson", "dll", "dylib", "hex", "jsxbin", "lib", "o", "res", "scn", "sys"]
+
+[blazor_file]
+extensions = ["cshtml", "razor"]
+
+[bukkit_file]
+filenames = ["bukkit.yaml", "bukkit.yml", "plugin.yaml", "plugin.yml"]
+
+[cargo_file]
+filenames = [".cargo/config.toml", "Cargo.toml"]
+
+[cargo_folder]
+foldernames = [".cargo", "crates"]
+
+[config_file]
+extensions = ["cfg", "cnf", "conf", "conf.dist", "config", "config.js", "config.ts", "dist", "env", "env.development", "env.example", "env.local", "env.production", "htaccess", "import", "ini", "ini.dist", "properties", "settings"]
+filenames = [".eslintrc", ".eslintrc.json", ".eslintrc.yaml", ".eslintrc.yml", ".hintrc", ".hintrc.json", ".hintrc.yaml", ".hintrc.yml", ".mcattributes", ".mcdefinitions", "appsettings.json", "conf", "config", "config.json", "settings.json", "webpack.config.cjs", "webpack.config.mjs"]
+
+[config_folder]
+foldernames = ["ci", "config", "configs", "etc", "gameplayconfigs", "helpers", "prefabeditorcreationsettings", "projectileconfigs", "settings", "util", "utilities", "utils"]
+
+[contributing_file]
+filenames = ["CONTRIBUTING", "CONTRIBUTING.md", "CONTRIBUTING.txt"]
+
+[copyright_file]
+filenames = ["COPYRIGHT", "COPYRIGHT.md", "COPYRIGHT.txt"]
+
+[css_file]
+extensions = ["css", "less", "scss"]
+
+[css_folder]
+foldernames = ["css", "less", "postcss", "sass", "scss", "styles", "stylesheets"]
+
+[dart_folder]
+foldernames = [".dart_tool"]
+
+[database_file]
+extensions = ["accdb", "db", "db3", "dbf", "fdb", "frm", "gdb", "ldb", "mdb", "mongodb", "myd", "myi", "nsf", "odb", "pdb", "pgsql", "pkb", "pks", "postgres", "psql", "sdb", "sql", "sqlite", "sqlite3"]
+
+[database_folder]
+foldernames = ["database", "db", "migrations", "resources", "seeds", "sql"]
+
+[docker_file]
+extensions = ["dockerignore"]
+filenames = ["compose.override.json", "compose.override.yaml", "compose.override.yml", "compose.yaml", "compose.yml", "docker-compose.override.yaml", "docker-compose.override.yml", "docker-compose.yaml", "docker-compose.yml", "Dockerfile"]
+
+[docker_folder]
+foldernames = [".docker"]
+
+[document_file]
+extensions = ["doc", "docx", "dot", "fodt", "ltx", "odm", "odt", "pages", "wpd", "wps"]
+
+[editorconfig_file]
+filenames = [".editorconfig"]
+
+[elm_folder]
+foldernames = ["elm-stuff"]
+
+[excel_file]
+extensions = ["csv", "ods", "psv", "tsv", "xls", "xlsb", "xlsm", "xlsx", "xlw"]
+
+[executable_file]
+extensions = ["app", "appx", "com", "dmg", "exe", "msi", "out", "pdx", "pdz", "run"]
+
+[executable_folder]
+foldernames = ["app", "bin", "build", "dist", "out", "publish", "release", "releases"]
+
+[fabric_file]
+extensions = ["accesswidener"]
+filenames = ["fabric-mod.json"]
+
+[forge_file]
+filenames = ["accesstransformer.cfg", "mcmod.info", "mods.toml"]
+
+[fox_file]
+extensions = ["fox"]
+filenames = [".gitlab-ci.yaml", ".gitlab-ci.yml", "neoforge.mods.toml"]
+
+[git_file]
+extensions = ["git"]
+filenames = [".gitattributes", ".gitmodules"]
+
+[git_folder]
+foldernames = [".git"]
+
+[github_folder]
+foldernames = [".github", "github"]
+
+[gitignore_file]
+extensions = ["gitignore"]
+
+[godot_file]
+extensions = ["gd", "gdextension", "tres", "tscn", "uid"]
+
+[godot_folder]
+foldernames = [".godot"]
+
+[godot_project_file]
+filenames = ["project.godot"]
+
+[godotignore_file]
+extensions = ["gdignore"]
+
+[gradle_file]
+extensions = ["gradle", "gradle.kts"]
+filenames = ["gradle-wrapper.properties", "gradle.properties", "gradlew", "gradlew.bat"]
+
+[gradle_folder]
+foldernames = [".gradle", "buildSrc", "gradle"]
+
+[html_file]
+extensions = ["hta", "htm", "html", "htmls", "xht", "xhtml"]
+
+[image_file]
+extensions = ["painting_variant/json", "png", "afphoto", "ami", "apx", "art", "avif", "bmp", "bpg", "brk", "cd5", "cdr", "cgm", "clip", "cpt", "cur", "dcm", "dds", "djvu", "dng", "ecw", "eps", "exr", "flif", "fpx", "gbr", "gif", "hdr", "heic", "heif", "icns", "ico", "iff", "img", "jb2", "jbig2", "jfif", "jng", "jp2", "jpeg", "jpg", "jxr", "kra", "mdp", "mng", "ora", "pbm", "pcx", "pdi", "pdn", "pgf", "pgm", "pgx", "pic", "pnm", "ppm", "psb", "psd", "raw", "reb", "sai", "sid", "svg", "tga", "tif", "tiff", "vtf", "wbmp", "webp", "wmf", "xcf"]
+
+[image_folder]
+foldernames = ["painting_variant", "textures", "blocktextures", "icons", "images", "sprites"]
+
+[jar_file]
+extensions = ["jar"]
+
+[jar_folder]
+foldernames = ["mods", "plugins", "target"]
+
+[javascript_folder]
+foldernames = ["javascript", "javascripts", "js", "script", "scripts"]
+
+[jetbrains_file]
+extensions = ["iml", "ipr", "iws"]
+
+[jetbrains_folder]
+foldernames = [".idea"]
+
+[jsconfig_file]
+filenames = ["jsconfig.json"]
+
+[julia_folder]
+foldernames = [".julia"]
+
+[latex_file]
+extensions = ["tex"]
+
+[license_file]
+filenames = ["LICENSE", "LICENSE.md", "LICENSE.txt"]
+
+[linux_file]
+extensions = ["deb", "so"]
+
+[linux_folder]
+foldernames = ["alpine", "appimage", "archlinux", "centos", "deb", "debian", "fedora", "flatpak", "gentoo", "gnu", "grub", "init.d", "kali", "kalilinux", "linux", "nixos", "opensuse", "posix", "raspbian", "redhat", "rpm", "snap", "suse", "systemd", "ubuntu", "unix", "wsl"]
+
+[lock_file]
+extensions = ["checksum", "crc", "hash", "hashes", "lock", "lock.json", "lockb", "lockfile", "md5", "sha1", "sha256", "sha512"]
+filenames = ["go.sum", "package-lock.json", "pnpm-lock.yaml", "pnpm-lock.yml"]
+
+[log_file]
+extensions = ["dmp", "dump", "err", "log", "tmp"]
+
+[log_folder]
+foldernames = ["logs"]
+
+[loom_file]
+extensions = ["loom.gradle", "loom.gradle.kts"]
+
+[markdown_file]
+extensions = ["markdn", "markdown", "md", "md.rendered", "mdown", "mdtext", "mdtxt", "mdwn", "mdx", "mkd", "mkdn", "rst"]
+
+[maven_file]
+extensions = ["pom"]
+
+[maven_folder]
+foldernames = [".m2", ".mvn"]
+
+[modrinth_file]
+extensions = ["modrinth.json", "mrpack"]
+filenames = ["modrinth.index.json"]
+
+[mongodb_file]
+extensions = ["mongo"]
+
+[neovim_file]
+filenames = ["nvim/init.lua", "nvim/init.vim"]
+
+[neovim_folder]
+foldernames = ["nvim"]
+
+[nim_folder]
+foldernames = ["nim", "nimcache"]
+
+[npm_file]
+filenames = [".npmrc", "package.json"]
+
+[npm_folder]
+foldernames = ["node_modules"]
+
+[npmignore_file]
+extensions = ["npmignore"]
+
+[paper_file]
+filenames = ["paper-global.yaml", "paper-global.yml", "paper-plugin.yaml", "paper-plugin.yml", "paper-world-defaults.yaml", "paper-world-defaults.yml", "paper-world.yaml", "paper-world.yml"]
+
+[pdf_file]
+extensions = ["pdf", "rtf"]
+filenames = ["CODE_OF_CONDUCT", "CODE_OF_CONDUCT.md", "CODE_OF_CONDUCT.txt"]
+
+[playdate_file]
+filenames = ["pdxinfo"]
+
+[prettier_file]
+filenames = [".prettierrc", ".prettierrc.json", ".prettierrc.json5", ".prettierrc.yaml", ".prettierrc.yml"]
+
+[prettierignore_file]
+extensions = ["prettierignore"]
+
+[purpur_file]
+filenames = ["purpur.yaml", "purpur.yml"]
+
+[python_folder]
+foldernames = ["__pycache__"]
+
+[quilt_file]
+filenames = ["quilt.mod.json"]
+
+[readme_file]
+filenames = ["README", "README.md", "README.txt"]
+
+["requirements.txt_file"]
+filenames = ["requirements.txt", "pyproject.toml"]
+
+[rss_file]
+extensions = ["rss"]
+
+[scala_folder]
+foldernames = [".bloop", ".metals"]
+
+[shell_folder]
+foldernames = ["bash", "cli", "cmd", "powershell", "pwsh", "sh", "shell", "shells", "terminal", "zsh"]
+
+[spigot_file]
+filenames = ["spigot.yaml", "spigot.yml"]
+
+[sponge_mixins_file]
+extensions = ["mixins.json", "mixins/java", "refmap.json"]
+
+[src_folder]
+foldernames = ["src"]
+
+[src_folder_closed]
+foldernames = ["src"]
+
+[sublime_file]
+extensions = ["sublime-build", "sublime-keymap", "sublime-macro", "sublime-project", "sublime-settings", "sublime-snippet", "sublime-syntax", "sublime-workspace"]
+
+[terraform_file]
+extensions = ["tf"]
+
+[terraform_folder]
+foldernames = [".terraform"]
+
+["test.js_file"]
+extensions = ["test.js"]
+
+["test.ts_file"]
+extensions = ["test.ts"]
+
+[text_file]
+extensions = ["txt"]
+
+[text_folder]
+foldernames = ["texts", "wordlists"]
+
+[todo_file]
+extensions = ["taskpaper", "tasks", "todo", "todos"]
+filenames = ["todo.md", "todo.txt"]
+
+[todo_folder]
+foldernames = ["backlog", "kanban", "milestones", "planning", "plans", "roadmap", "tickets", "todo", "todos"]
+
+[toml_file]
+extensions = ["toml"]
+
+[tsconfig_file]
+filenames = ["tsconfig.json"]
+
+[typst_folder]
+foldernames = ["typst-packages"]
+
+[valve_file]
+extensions = ["bsp", "vmf", "vmt"]
+
+[video_file]
+extensions = ["mcmeta", "animation_controllers/json", "animations/animation.json", "3g2", "3gp", "amv", "asf", "avi", "blockyanim", "f4p", "f4v", "flv", "gifv", "m4v", "mkv", "mov", "mp4", "mpe", "mpeg", "mpg", "mpv", "mxf", "nsv", "ogv", "pdv", "qt", "rm", "roq", "svi", "vob", "webm", "wmv", "yuv"]
+filenames = ["textures/flipbook_textures.json"]
+
+[video_folder]
+foldernames = ["animation_controllers", "animations", "vfx"]
+
+[vim_file]
+extensions = ["vim"]
+filenames = [".gvimrc", ".vimrc", "_gvimrc", "_vimrc"]
+
+[vim_folder]
+foldernames = [".vim"]
+
+[vs_file]
+extensions = ["sln", "vbproj", "vcxproj"]
+
+[vs_folder]
+foldernames = [".vs"]
+
+[vscode_file]
+extensions = ["code-profile", "code-snippets", "code-workplace", "code-workspace", "vsix", "vsixmanifest"]
+
+[vscode_folder]
+foldernames = [".vscode"]
+
+[vscodeignore_file]
+extensions = ["vscodeignore"]
+
+[xml_file]
+extensions = ["admx", "aseprite-data", "aseprite-keys", "filters", "ivy", "jelly", "mxml", "nuspec", "resx", "targets", "tld", "wsdl", "xib", "xlf", "xliff", "xmi", "xml", "xsd", "xsl", "xslt"]
+
+[yaml_file]
+extensions = ["rviz", "yaml", "yml"]
+
+[zig_folder]
+foldernames = ["zig", "zig-cache", "zig-out"]
+
