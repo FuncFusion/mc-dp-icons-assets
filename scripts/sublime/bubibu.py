@@ -29,8 +29,8 @@
         "_scopes": (
             "list",
             {
-                "source.json": ["json", "jsonc"],
                 "mc_dp_icons.json_file": ["json5", "jsonl", "jsond"],
+                "source.json.mc_dp_icons.json_file": [],
             },
         ),
     },
@@ -540,7 +540,6 @@
             "list",
             {
                 "source.dot": ["dot"],
-                "text.tex.latex": ["ltx"],
                 "mc_dp_icons.document_file": [
                     "doc",
                     "docx",
@@ -551,6 +550,7 @@
                     "wpd",
                     "wps",
                 ],
+                "text.tex.latex.mc_dp_icons.document_file": [],
             },
         ),
     },
@@ -719,7 +719,6 @@
         "_scopes": (
             "list",
             {
-                "source.groovy": ["gradle"],
                 "mc_dp_icons.gradle_file": [
                     "gradle-wrapper.properties",
                     "gradle.properties",
@@ -727,6 +726,7 @@
                     "gradlew.bat",
                     "gradle.kts",
                 ],
+                "source.groovy.mc_dp_icons.gradle_file": [],
             },
         ),
     },
@@ -739,8 +739,8 @@
         "_scopes": (
             "list",
             {
-                "text.html.basic": ["htm", "html", "xhtml"],
                 "mc_dp_icons.html_file": ["hta", "htmls", "xht"],
+                "text.html.basic.mc_dp_icons.html_file": [],
             },
         ),
     },
@@ -820,7 +820,6 @@
         "_scopes": (
             "list",
             {
-                "text.xml": ["svg"],
                 "mc_dp_icons.image_file": [
                     "png",
                     "afphoto",
@@ -892,6 +891,7 @@
                     "wmf",
                     "xcf",
                 ],
+                "text.xml.mc_dp_icons.image_file": [],
             },
         ),
     },
@@ -934,7 +934,7 @@
     "julia_folder": {"foldernames": [".julia"], "_scopes": ("list", {})},
     "latex_file": {
         "extensions": ["tex"],
-        "_scopes": ("list", {"text.tex.latex": ["tex"]}),
+        "_scopes": ("list", {"text.tex.latex.mc_dp_icons.latex_file": []}),
     },
     "license_file": {
         "filenames": ["LICENSE", "LICENSE.md", "LICENSE.txt"],
@@ -1050,7 +1050,6 @@
         "_scopes": (
             "list",
             {
-                "text.html.markdown": ["markdn", "markdown", "md", "mdown", "mdwn"],
                 "text.restructuredtext": ["rst"],
                 "mc_dp_icons.markdown_file": [
                     "md.rendered",
@@ -1060,6 +1059,7 @@
                     "mkd",
                     "mkdn",
                 ],
+                "text.html.markdown.mc_dp_icons.markdown_file": [],
             },
         ),
     },
@@ -1214,7 +1214,7 @@
     },
     "rss_file": {
         "extensions": ["rss"],
-        "_scopes": ("list", {"text.xml": ["rss"]}),
+        "_scopes": ("list", {"text.xml.mc_dp_icons.rss_file": []}),
     },
     "scala_folder": {
         "foldernames": [".bloop", ".metals"],
@@ -1263,16 +1263,9 @@
         "_scopes": (
             "list",
             {
-                "source.json": [
-                    "sublime-build",
-                    "sublime-keymap",
-                    "sublime-macro",
-                    "sublime-project",
-                    "sublime-settings",
-                    "sublime-workspace",
-                ],
-                "text.xml": ["sublime-snippet"],
-                "source.yaml": ["sublime-syntax"],
+                "source.json.mc_dp_icons.sublime_file": [],
+                "text.xml.mc_dp_icons.sublime_file": [],
+                "source.yaml.mc_dp_icons.sublime_file": [],
             },
         ),
     },
@@ -1333,7 +1326,7 @@
     },
     "toml_file": {
         "extensions": ["toml"],
-        "_scopes": ("list", {"source.toml": ["toml"]}),
+        "_scopes": ("list", {"source.toml.mc_dp_icons.toml_file": []}),
     },
     "tsconfig_file": {
         "filenames": ["tsconfig.json"],
@@ -1441,7 +1434,7 @@
     "vs_file": {
         "extensions": ["sln", "vbproj", "vcxproj"],
         "_scopes": (
-            "list", {"text.xml": ["vbproj", "vcxproj"], "mc_dp_icons.vs_file": ["sln"]}
+            "list", {"mc_dp_icons.vs_file": ["sln"], "text.xml.mc_dp_icons.vs_file": []}
         ),
     },
     "vs_folder": {"foldernames": [".vs"], "_scopes": ("list", {})},
@@ -1501,7 +1494,6 @@
         "_scopes": (
             "list",
             {
-                "text.xml": ["targets", "tld", "xml"],
                 "mc_dp_icons.xml_file": [
                     "admx",
                     "aseprite-data",
@@ -1521,13 +1513,18 @@
                     "xsl",
                     "xslt",
                 ],
+                "text.xml.mc_dp_icons.xml_file": [],
             },
         ),
     },
     "yaml_file": {
         "extensions": ["rviz", "yaml", "yml"],
         "_scopes": (
-            "list", {"source.yaml": ["yaml", "yml"], "mc_dp_icons.yaml_file": ["rviz"]}
+            "list",
+            {
+                "mc_dp_icons.yaml_file": ["rviz"],
+                "source.yaml.mc_dp_icons.yaml_file": [],
+            },
         ),
     },
     "zig_folder": {
@@ -1536,7 +1533,7 @@
     },
     "arduino_file": {
         "extensions": ["ino"],
-        "_scopes": ("list", {"source.c++": ["ino"]}),
+        "_scopes": ("list", {"source.c++.mc_dp_icons.arduino_file": []}),
     },
     "assembly_file": {
         "extensions": [
@@ -1588,7 +1585,7 @@
     },
     "c_header_file": {
         "extensions": ["h"],
-        "_scopes": ("list", {"source.c++": ["h"]}),
+        "_scopes": ("list", {"source.c++.mc_dp_icons.c_header_file": []}),
     },
     "clojure_file": {
         "extensions": ["clj", "cljc", "cljd", "cljr", "cljs"],
@@ -1596,8 +1593,8 @@
             "list",
             {
                 "source.clojure": ["clj"],
-                "source.clojure.clojurescript": ["cljc", "cljs"],
                 "mc_dp_icons.clojure_file": ["cljd", "cljr"],
+                "source.clojure.clojurescript.mc_dp_icons.clojure_file": [],
             },
         ),
     },
@@ -1606,8 +1603,8 @@
         "_scopes": (
             "list",
             {
-                "source.c++": ["c++", "cc", "cpp", "cxx"],
                 "mc_dp_icons.cplusplus_file": ["ii"],
+                "source.c++.mc_dp_icons.cplusplus_file": [],
             },
         ),
     },
@@ -1616,8 +1613,8 @@
         "_scopes": (
             "list",
             {
-                "source.c++": ["h++", "hh", "hpp", "hxx", "inl", "ipp"],
                 "mc_dp_icons.cplusplus_header_file": ["pch", "tcc", "tpp"],
+                "source.c++.mc_dp_icons.cplusplus_header_file": [],
             },
         ),
     },
@@ -1630,9 +1627,9 @@
         "_scopes": (
             "list",
             {
-                "source.cs": ["cs", "csx"],
-                "text.xml": ["csproj"],
                 "mc_dp_icons.csharp_file": ["csharp"],
+                "text.xml.mc_dp_icons.csharp_file": [],
+                "source.cs.mc_dp_icons.csharp_file": [],
             },
         ),
     },
@@ -1643,7 +1640,8 @@
     "dlang_file": {
         "extensions": ["d", "dd", "di"],
         "_scopes": (
-            "list", {"source.d": ["d", "di"], "mc_dp_icons.dlang_file": ["dd"]}
+            "list",
+            {"mc_dp_icons.dlang_file": ["dd"], "source.d.mc_dp_icons.dlang_file": []},
         ),
     },
     "ejs_file": {
@@ -1663,7 +1661,7 @@
     },
     "erlang_file": {
         "extensions": ["erl", "hrl"],
-        "_scopes": ("list", {"source.erlang": ["erl", "hrl"]}),
+        "_scopes": ("list", {"source.erlang.mc_dp_icons.erlang_file": []}),
     },
     "fennel_file": {
         "extensions": ["fnl"],
@@ -1692,7 +1690,10 @@
         "extensions": ["fs", "fsi", "fsproj", "fsx"],
         "_scopes": (
             "list",
-            {"text.xml": ["fsproj"], "mc_dp_icons.fsharp_file": ["fs", "fsi", "fsx"]},
+            {
+                "mc_dp_icons.fsharp_file": ["fs", "fsi", "fsx"],
+                "text.xml.mc_dp_icons.fsharp_file": [],
+            },
         ),
     },
     "gamemaker_file": {
@@ -1717,7 +1718,7 @@
     },
     "groovy_file": {
         "extensions": ["groovy"],
-        "_scopes": ("list", {"source.groovy": ["groovy"]}),
+        "_scopes": ("list", {"source.groovy.mc_dp_icons.groovy_file": []}),
     },
     "haskell_file": {
         "extensions": ["cabal", "hs", "lhs"],
@@ -1725,13 +1726,13 @@
         "_scopes": (
             "list",
             {
-                "source.cabal": ["cabal.project", "cabal"],
                 "source.haskell": ["hs"],
                 "text.tex.latex.haskell": ["lhs"],
                 "mc_dp_icons.haskell_file": [
                     "cabal.project.freeze",
                     "cabal.project.local",
                 ],
+                "source.cabal.mc_dp_icons.haskell_file": [],
             },
         ),
     },
@@ -1751,9 +1752,9 @@
         "_scopes": (
             "list",
             {
-                "source.java": ["java"],
                 "text.html.jsp": ["jsp"],
                 "mc_dp_icons.java_file": ["class", "jmod", "jws"],
+                "source.java.mc_dp_icons.java_file": [],
             },
         ),
     },
@@ -1762,8 +1763,8 @@
         "_scopes": (
             "list",
             {
-                "source.js": ["cjs", "js", "mjs"],
                 "mc_dp_icons.javascript_file": ["es6", "jake", "jsm", "jss", "pac"],
+                "source.js.mc_dp_icons.javascript_file": [],
             },
         ),
     },
@@ -1777,7 +1778,7 @@
     },
     "lisp_file": {
         "extensions": ["fasl", "lisp", "lsp"],
-        "_scopes": ("list", {"source.lisp": ["fasl", "lisp", "lsp"]}),
+        "_scopes": ("list", {"source.lisp.mc_dp_icons.lisp_file": []}),
     },
     "lua_file": {
         "extensions": ["lua", "luac", "luau", "luc"],
@@ -1808,7 +1809,7 @@
     },
     "ocaml_file": {
         "extensions": ["ml", "mli"],
-        "_scopes": ("list", {"source.ocaml": ["ml", "mli"]}),
+        "_scopes": ("list", {"source.ocaml.mc_dp_icons.ocaml_file": []}),
     },
     "odin_file": {
         "extensions": ["odin"],
@@ -1819,8 +1820,8 @@
         "_scopes": (
             "list",
             {
-                "source.pascal": ["dpr", "pas"],
                 "mc_dp_icons.pascal_file": ["inc", "lpr", "pp"],
+                "source.pascal.mc_dp_icons.pascal_file": [],
             },
         ),
     },
@@ -1829,8 +1830,8 @@
         "_scopes": (
             "list",
             {
-                "source.perl": ["pl", "pm"],
                 "mc_dp_icons.perl_file": ["pls", "plx", "xs"],
+                "source.perl.mc_dp_icons.perl_file": [],
             },
         ),
     },
@@ -1854,10 +1855,10 @@
         "_scopes": (
             "list",
             {
-                "source.toml": ["Pipfile"],
-                "source.json": ["ipynb"],
-                "source.python": ["py", "pyi", "pyw"],
                 "mc_dp_icons.python_file": ["pyde", "pyp", "pyt"],
+                "source.json.mc_dp_icons.python_file": [],
+                "source.toml.mc_dp_icons.python_file": [],
+                "source.python.mc_dp_icons.python_file": [],
             },
         ),
     },
@@ -1917,18 +1918,9 @@
         "_scopes": (
             "list",
             {
-                "source.ruby": [
-                    "Gemfile",
-                    "gemspec",
-                    "jbuilder",
-                    "podspec",
-                    "rabl",
-                    "rake",
-                    "rb",
-                    "rbi",
-                ],
                 "text.html.rails": ["erb"],
                 "mc_dp_icons.ruby_file": ["mspec", "rbs"],
+                "source.ruby.mc_dp_icons.ruby_file": [],
             },
         ),
     },
@@ -1940,7 +1932,7 @@
     },
     "scala_file": {
         "extensions": ["sc", "scala"],
-        "_scopes": ("list", {"source.scala": ["sc", "scala"]}),
+        "_scopes": ("list", {"source.scala.mc_dp_icons.scala_file": []}),
     },
     "shell_file": {
         "extensions": [
@@ -1975,9 +1967,6 @@
         "_scopes": (
             "list",
             {
-                "source.shell.bash": ["ash", "bash", "sh"],
-                "source.dosbatch": ["bat", "cmd"],
-                "source.java": ["bsh"],
                 "source.tcl": ["tcl"],
                 "source.shell.zsh": ["zsh"],
                 "mc_dp_icons.shell_file": [
@@ -2001,6 +1990,9 @@
                     "rc",
                     "tcsh",
                 ],
+                "source.java.mc_dp_icons.shell_file": [],
+                "source.shell.bash.mc_dp_icons.shell_file": [],
+                "source.dosbatch.mc_dp_icons.shell_file": [],
             },
         ),
     },
@@ -2040,8 +2032,8 @@
         "_scopes": (
             "list",
             {
-                "source.ts": ["cts", "ts"],
                 "mc_dp_icons.typescript_file": ["tsbuildinfo"],
+                "source.ts.mc_dp_icons.typescript_file": [],
             },
         ),
     },
