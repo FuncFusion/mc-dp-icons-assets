@@ -1,0 +1,45 @@
+[attachables_file]
+extensions = ["attachables/json"]
+
+[attachables_folder]
+foldernames = ["attachables"]
+
+["biomes_client.json_file"]
+filenames = ["biomes_client.json", "client_biome.json"]
+
+[block_culling_file]
+extensions = ["block_culling/json"]
+
+[block_culling_folder]
+foldernames = ["block_culling"]
+
+["blocks.json_file"]
+filenames = ["blocks.json"]
+
+[fogs_file]
+extensions = ["atmospherics/json", "fogs/json"]
+
+[fogs_folder]
+foldernames = ["atmospherics", "fogs", "environments"]
+
+[materials_file]
+extensions = ["material"]
+
+[materials_folder]
+foldernames = ["materials"]
+
+[render_controllers_file]
+extensions = ["render_controllers/render_controllers.json"]
+
+[render_controllers_folder]
+foldernames = ["render_controllers"]
+
+["splashes.json_file"]
+filenames = ["splashes.txt", "splashes.json"]
+
+[ui_file]
+extensions = ["ui/json"]
+
+[ui_folder]
+foldernames = ["ui"]
+

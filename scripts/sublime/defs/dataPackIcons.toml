@@ -1,0 +1,245 @@
+[advancement_file]
+extensions = ["advancement/json", "advancements/json"]
+
+[advancement_folder]
+foldernames = ["advancement", "advancements"]
+
+[ajmeta_file]
+extensions = ["ajblueprint", "ajmeta", "ajmodel"]
+
+[banner_pattern_file]
+extensions = ["banner_pattern/json"]
+
+[banner_pattern_folder]
+foldernames = ["banner_pattern"]
+
+[beet_file]
+filenames = ["beet.json", "beet.yaml", "beet.yml"]
+
+[bolt_file]
+extensions = ["bolt"]
+
+[cat_variant_file]
+extensions = ["cat_variant/json"]
+
+[cat_variant_folder]
+foldernames = ["cat_sound_variant", "cat_variant"]
+
+[chat_type_file]
+extensions = ["chat_type/json", "dialogue/json"]
+
+[chat_type_folder]
+foldernames = ["chat_type", "dialogue"]
+
+[chicken_variant_file]
+extensions = ["chicken_variant/json"]
+
+[chicken_variant_folder]
+foldernames = ["chicken_sound_variant", "chicken_variant"]
+
+[cow_variant_file]
+extensions = ["cow_variant/json"]
+
+[cow_variant_folder]
+foldernames = ["cow_sound_variant", "cow_variant"]
+
+[damage_type_file]
+extensions = ["damage_type/json"]
+
+[damage_type_folder]
+foldernames = ["damage_type"]
+
+[data_folder]
+foldernames = ["data"]
+
+[data_folder_closed]
+foldernames = ["data"]
+
+[datapacks_folder]
+foldernames = ["datapacks"]
+
+[dialog_file]
+extensions = ["dialog/json"]
+
+[dialog_folder]
+foldernames = ["dialog"]
+
+[dimension_file]
+extensions = ["dimension/json"]
+
+[dimension_folder]
+foldernames = ["dimension"]
+
+[dimension_type_file]
+extensions = ["dimension_type/json"]
+
+[dimension_type_folder]
+foldernames = ["dimension_type", "portaltypes"]
+
+[enchantment_file]
+extensions = ["enchantment/json", "enchantment_provider/json"]
+
+[enchantment_folder]
+foldernames = ["enchantment", "enchantment_provider"]
+
+[frog_variant_file]
+extensions = ["frog_variant/json"]
+
+[frog_variant_folder]
+foldernames = ["frog_variant"]
+
+[function_folder]
+foldernames = ["function", "functions"]
+
+[hjmc_file]
+extensions = ["hjmc"]
+
+[instrument_file]
+extensions = ["instrument/json"]
+
+[instrument_folder]
+foldernames = ["instrument"]
+
+[item_modifier_file]
+extensions = ["item_modifier/json", "item_modifiers/json", "item_catalog/json"]
+
+[item_modifier_folder]
+foldernames = ["item_modifier", "item_modifiers", "item_catalog"]
+
+[jmc_file]
+extensions = ["jmc"]
+
+[json_file]
+extensions = ["json", "har", "json5", "jsonc", "jsonl", "jsonld", "ndjson", "pdt", "topojson", "webmanifest"]
+
+[jukebox_song_file]
+extensions = ["jukebox_song/json"]
+
+[jukebox_song_folder]
+foldernames = ["jukebox_song", "music"]
+
+["level.dat_file"]
+filenames = ["level.dat"]
+
+["load.json_file"]
+filenames = ["function/load.json", "functions/load.json"]
+
+[loot_table_file]
+extensions = ["loot_table/json", "loot_tables/json"]
+
+[loot_table_folder]
+foldernames = ["loot_table", "loot_tables", "drops"]
+
+[mcbuild_file]
+extensions = ["mcb", "mcbt"]
+
+[mcfunction_file]
+extensions = ["mcfunction"]
+
+[nbt_file]
+extensions = ["nbt"]
+
+["pack.mcmeta_file"]
+filenames = ["pack.mcmeta", "manifest.json"]
+
+[pig_variant_file]
+extensions = ["pig_variant/json"]
+
+[pig_variant_folder]
+foldernames = ["pig_sound_variant", "pig_variant"]
+
+[predicate_file]
+extensions = ["predicate/json", "predicates/json"]
+
+[predicate_folder]
+foldernames = ["predicate", "predicates"]
+
+[recipe_file]
+extensions = ["mak", "make", "mk", "recipe/json", "recipes/json", "zs"]
+filenames = ["gnumakefile", "kbuild", "makefile"]
+
+[recipe_folder]
+foldernames = ["recipe", "recipes"]
+
+[sandstone_file]
+filenames = ["sandstone.config.ts"]
+
+[spyglass_file]
+extensions = ["mcdoc", "cameras/json", "spyglass.json"]
+
+[spyglass_folder]
+foldernames = ["mcdoc", "cameras", "camera"]
+
+[structure_file]
+extensions = ["structure/nbt", "structures/nbt", "mcstructure"]
+
+[structure_folder]
+foldernames = ["structure", "structures", "instances"]
+
+[sulfur_cube_archetype_file]
+extensions = ["sulfur_cube_archetype/json"]
+
+[sulfur_cube_archetype_folder]
+foldernames = ["sulfur_cube_archetype"]
+
+[tags_folder]
+foldernames = ["tags", "tag_patterns", "weathers"]
+
+[test_environment_file]
+extensions = ["test_environment/json"]
+
+[test_environment_folder]
+foldernames = ["test_environment", "__tests__", "test", "tests"]
+
+[test_instance_file]
+extensions = ["test_instance/json"]
+
+[test_instance_folder]
+foldernames = ["test_instance"]
+
+["tick.json_file"]
+filenames = ["function/tick.json", "functions/tick.json"]
+
+[timeline_file]
+extensions = ["timeline/json", "world_clock/json"]
+filenames = ["CHANGELOG", "CHANGELOG.md", "CHANGELOG.txt"]
+
+[timeline_folder]
+foldernames = ["timeline", "world_clock"]
+
+[trial_spawner_file]
+extensions = ["trial_spawner/json"]
+
+[trial_spawner_folder]
+foldernames = ["trial_spawner"]
+
+[trim_material_file]
+extensions = ["trim_material/json"]
+
+[trim_material_folder]
+foldernames = ["trim_material", "cosmetics"]
+
+[trim_pattern_file]
+extensions = ["trim_pattern/json"]
+
+[trim_pattern_folder]
+foldernames = ["trim_pattern", "responsecurves"]
+
+[wolf_variant_file]
+extensions = ["wolf_variant/json"]
+
+[wolf_variant_folder]
+foldernames = ["wolf_sound_variant", "wolf_variant"]
+
+[worldgen_file]
+extensions = ["biomes/json"]
+
+[worldgen_folder]
+foldernames = ["worldgen", "biomes", "world"]
+
+[zombie_nautilus_variant_file]
+extensions = ["zombie_nautilus_variant/json"]
+
+[zombie_nautilus_variant_folder]
+foldernames = ["zombie_nautilus_variant"]
+

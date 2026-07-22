@@ -1,0 +1,30 @@
+[blocks_file]
+extensions = ["blocks/json"]
+
+[blocks_folder]
+foldernames = ["blocks", "blocktypelist"]
+
+[entities_file]
+extensions = ["entities/json", "entity/json"]
+
+[entities_folder]
+foldernames = ["entities", "entity", "characters"]
+
+[features_file]
+extensions = ["feature_rules/json", "features/json"]
+
+[features_folder]
+foldernames = ["feature_rules", "features", "prefablist", "prefabs"]
+
+[spawn_rules_file]
+extensions = ["spawn_rules/json"]
+
+[spawn_rules_folder]
+foldernames = ["spawn_rules"]
+
+[trading_file]
+extensions = ["trade_set/json", "villager_trade/json", "trading/json"]
+
+[trading_folder]
+foldernames = ["trade_set", "villager_trade", "trading", "bartershops", "npc"]
+

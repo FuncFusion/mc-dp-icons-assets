@@ -1,0 +1,83 @@
+[assets_folder]
+foldernames = ["assets"]
+
+[assets_folder_closed]
+foldernames = ["assets"]
+
+[atlases_file]
+extensions = ["atlases/json"]
+filenames = ["atlases/blocks.json", "textures/terrain_texture.json"]
+
+[atlases_folder]
+foldernames = ["atlases"]
+
+[blockbench_file]
+extensions = ["bbmodel"]
+
+[blockstates_file]
+extensions = ["blockstates/json"]
+
+[blockstates_folder]
+foldernames = ["blockstates"]
+
+[equipment_file]
+extensions = ["equipment/json"]
+
+[equipment_folder]
+foldernames = ["equipment"]
+
+[font_file]
+extensions = ["font", "font/json", "ttf", "fontdata", "bmap", "eot", "fnt", "fonts", "mrf", "ntf", "odttf", "otf", "pft", "sui", "suit", "ttc", "woff", "woff2"]
+
+[font_folder]
+foldernames = ["font", "fonts"]
+
+[fragment_shader_file]
+extensions = ["fsh", "fp", "frag"]
+
+[glsl_file]
+extensions = ["glsl", "comp", "geom", "hlsl", "tesc", "tese", "wgsl"]
+
+[items_file]
+extensions = ["items/json"]
+
+[items_folder]
+foldernames = ["items"]
+
+[lang_file]
+extensions = ["lang", "lang/json"]
+filenames = ["language_names.json", "languages.json"]
+
+[lang_folder]
+foldernames = ["lang", "languages"]
+
+[models_file]
+extensions = ["models/json", "3dm", "3ds", "3mf", "blend", "blockymodel", "c4d", "collada", "dxf", "fbx", "glb", "gltf", "iges", "ipt", "ma", "max", "mb", "mesh", "mqo", "obj", "ply", "pmx", "skp", "step", "stl", "stp", "usd", "usda", "usdc", "usdz", "vox", "vrm", "wrl", "x3d"]
+
+[models_folder]
+foldernames = ["models"]
+
+[particles_file]
+extensions = ["particles/json"]
+
+[particles_folder]
+foldernames = ["particles", "trails"]
+
+[shaders_file]
+extensions = ["post_effect/json", "shaders/json", "color_grading/json", "gdshader", "gpl"]
+
+[shaders_folder]
+foldernames = ["post_effect", "shaders", "color_grading", "screeneffects", "tintgradients"]
+
+["sounds.json_file"]
+filenames = ["sounds.json"]
+
+[vertex_shader_file]
+extensions = ["vsh", "vert", "workflows/yaml", "workflows/yml"]
+
+[waypoint_style_file]
+extensions = ["waypoint_style/json"]
+
+[waypoint_style_folder]
+foldernames = ["waypoint_style", "objective"]
+

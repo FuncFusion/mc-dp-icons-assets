@@ -7,7 +7,7 @@ def convert_ts_to_toml(input_ts_file, output_toml_file):
     with open(input_ts_file, "r") as f:
         contents = f.read()
 
-    icon_defs = re.findall(r"(?s){.*?}", contents)
+    icon_defs = re.findall(r"(?s){[^}]*?:.*?}", contents)
 
     # cleanup
     open(output_toml_file, "w").close()
@@ -38,4 +38,4 @@ def convert_ts_to_toml(input_ts_file, output_toml_file):
     
 
 if __name__ == "__main__":
-    convert_ts_to_toml("defs/languageIcons.ts", "languageIcons.toml")
+    convert_ts_to_toml("defs/resourcePackIcons.ts", "defs/resourcePackIcons.toml")
