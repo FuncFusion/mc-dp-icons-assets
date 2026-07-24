@@ -1,6 +1,9 @@
 [advancement_file]
 extensions = ["advancement/json", "advancements/json"]
 
+[flare_file]
+filenames = ["flare.json"]
+
 [advancement_folder]
 foldernames = ["advancement", "advancements"]
 
