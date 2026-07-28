@@ -88,7 +88,7 @@ extensions = ["hc", "hc.z"]
 extensions = ["class", "java", "jmod", "jsp", "jws"]
 
 [javascript_file]
-extensions = ["cjs", "es6", "jake", "js", "jsm", "jss", "mjs", "pac"]
+extensions = ["cjs", "es6", "jake", "js", "jsm", "jss", "mjs", "pac", "jsx"]
 
 [julia_file]
 extensions = ["jl"]
@@ -140,7 +140,7 @@ extensions = ["ipynb", "py", "pyde", "pyi", "pyp", "pyt", "pyw"]
 filenames = ["Pipfile"]
 
 [reason_react_file]
-extensions = ["jsx", "re", "rei", "tsx"]
+extensions = ["re", "rei"]
 
 [rlang_file]
 extensions = ["r", "rda", "rdata", "rds", "rhistory", "rmd", "rprofile", "rproj"]
@@ -168,7 +168,7 @@ extensions = ["svelte"]
 extensions = ["swift", "swiftdeps", "swiftdoc", "swiftinterface", "swiftmodule", "swiftsourceinfo"]
 
 [typescript_file]
-extensions = ["cts", "ts", "tsbuildinfo"]
+extensions = ["cts", "ts", "tsbuildinfo", "tsx"]
 
 [typst_file]
 extensions = ["typ"]
