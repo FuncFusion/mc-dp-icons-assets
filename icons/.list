@@ -1,5 +1,4 @@
 shell_file
-flare_file
 cargo_file
 vs_file
 docker_folder_xmas
@@ -111,7 +110,9 @@ tags_folder_xmas
 trim_material_folder_xmas
 namespace_folder_closed
 nim_file
+pixi_file
 vscode_folder
+flare_file
 tags_folder
 audio_file
 css_folder_xmas
