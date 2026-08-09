@@ -5,9 +5,6 @@ extensions = ["aab", "aar", "apk", "apks", "axml", "dalvik", "dex", "smali"]
 extensions = ["ant"]
 filenames = ["ant.xml", "build.xml"]
 
-[pixi_file]
-filenames = ["pixi.toml", "pixi.lock"]
-
 [archive_file]
 extensions = ["mcaddon", "mceditoraddon", "mcpack", "mcproject", "mctemplate", "mcworld", "7z", "ace", "arj", "asar", "bak", "br", "bz2", "bzip2", "cab", "gz", "gzip", "iso", "lz4", "lzma", "pak", "rar", "rpm", "squashfs", "sublime-package", "tar", "tgz", "txz", "tz", "vhd", "xz", "zip", "zst"]
 
@@ -98,6 +95,12 @@ foldernames = ["app", "bin", "build", "dist", "out", "publish", "release", "rele
 extensions = ["accesswidener"]
 filenames = ["fabric-mod.json"]
 
+[font_file]
+extensions = ["font", "font/json", "ttf", "fontdata", "bmap", "eot", "fnt", "fonts", "mrf", "ntf", "odttf", "otf", "pft", "sui", "suit", "ttc", "woff", "woff2"]
+
+[font_folder]
+foldernames = ["font", "fonts"]
+
 [forge_file]
 filenames = ["accesstransformer.cfg", "mcmod.info", "mods.toml"]
 
@@ -163,6 +166,9 @@ foldernames = [".idea"]
 
 [jsconfig_file]
 filenames = ["jsconfig.json"]
+
+[json_file]
+extensions = ["json", "har", "json5", "jsonc", "jsonl", "jsonld", "ndjson", "pdt", "topojson", "webmanifest"]
 
 [julia_folder]
 foldernames = [".julia"]
@@ -232,6 +238,9 @@ filenames = ["paper-global.yaml", "paper-global.yml", "paper-plugin.yaml", "pape
 [pdf_file]
 extensions = ["pdf", "rtf"]
 filenames = ["CODE_OF_CONDUCT", "CODE_OF_CONDUCT.md", "CODE_OF_CONDUCT.txt"]
+
+[pixi_file]
+filenames = ["pixi.toml", "pixi-global.toml"]
 
 [playdate_file]
 filenames = ["pdxinfo"]

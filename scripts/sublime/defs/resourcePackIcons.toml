@@ -26,17 +26,8 @@ extensions = ["equipment/json"]
 [equipment_folder]
 foldernames = ["equipment"]
 
-[font_file]
-extensions = ["font", "font/json", "ttf", "fontdata", "bmap", "eot", "fnt", "fonts", "mrf", "ntf", "odttf", "otf", "pft", "sui", "suit", "ttc", "woff", "woff2"]
-
-[font_folder]
-foldernames = ["font", "fonts"]
-
 [fragment_shader_file]
 extensions = ["fsh", "fp", "frag"]
-
-[glsl_file]
-extensions = ["glsl", "comp", "geom", "hlsl", "tesc", "tese", "wgsl"]
 
 [items_file]
 extensions = ["items/json"]

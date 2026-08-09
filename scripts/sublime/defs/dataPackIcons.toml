@@ -1,9 +1,6 @@
 [advancement_file]
 extensions = ["advancement/json", "advancements/json"]
 
-[flare_file]
-filenames = ["flare.json"]
-
 [advancement_folder]
 foldernames = ["advancement", "advancements"]
 
@@ -85,6 +82,10 @@ extensions = ["enchantment/json", "enchantment_provider/json"]
 [enchantment_folder]
 foldernames = ["enchantment", "enchantment_provider"]
 
+[flare_file]
+extensions = ["fl"]
+filenames = ["flare.json"]
+
 [frog_variant_file]
 extensions = ["frog_variant/json"]
 
@@ -111,9 +112,6 @@ foldernames = ["item_modifier", "item_modifiers", "item_catalog"]
 
 [jmc_file]
 extensions = ["jmc"]
-
-[json_file]
-extensions = ["json", "har", "json5", "jsonc", "jsonl", "jsonld", "ndjson", "pdt", "topojson", "webmanifest"]
 
 [jukebox_song_file]
 extensions = ["jukebox_song/json"]
@@ -223,7 +221,7 @@ extensions = ["trim_material/json"]
 foldernames = ["trim_material", "cosmetics"]
 
 [trim_pattern_file]
-extensions = ["trim_pattern/json"]
+extensions = ["trim_pattern/json", "tmpl"]
 
 [trim_pattern_folder]
 foldernames = ["trim_pattern", "responsecurves"]

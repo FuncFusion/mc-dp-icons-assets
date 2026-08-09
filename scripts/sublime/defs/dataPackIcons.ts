@@ -114,6 +114,11 @@ export const dataPackIcons: IconDefinition[] = [
     foldernames: ["enchantment", "enchantment_provider"],
   },
   {
+    name: "flare_file",
+    extensions: ["fl"],
+    filenames: ["flare.json"],
+  },
+  {
     name: "frog_variant_file",
     extensions: ["frog_variant/json"],
   },
@@ -148,10 +153,6 @@ export const dataPackIcons: IconDefinition[] = [
   {
     name: "jmc_file",
     extensions: ["jmc"],
-  },
-  {
-    name: "json_file",
-    extensions: ["json", "har", "json5", "jsonc", "jsonl", "jsonld", "ndjson", "pdt", "topojson", "webmanifest"],
   },
   {
     name: "jukebox_song_file",
@@ -327,7 +328,7 @@ export const dataPackIcons: IconDefinition[] = [
   },
   {
     name: "trim_pattern_file",
-    extensions: ["trim_pattern/json"],
+    extensions: ["trim_pattern/json", "tmpl"],
   },
   {
     name: "trim_pattern_folder",

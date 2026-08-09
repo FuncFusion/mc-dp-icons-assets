@@ -64,6 +64,9 @@ extensions = ["gml", "yy", "yymp", "yyp", "yyz"]
 [gleam_file]
 extensions = ["gleam"]
 
+[glsl_file]
+extensions = ["glsl", "comp", "geom", "hlsl", "tesc", "tese", "wgsl"]
+
 [go_file]
 extensions = ["go"]
 
@@ -103,7 +106,7 @@ extensions = ["fasl", "lisp", "lsp"]
 extensions = ["lua", "luac", "luau", "luc"]
 
 [mojo_file]
-extensions = ["mojo", "mojom", "�"]
+extensions = ["mojo", "mojom"]
 
 [moonscript_file]
 extensions = ["moon"]

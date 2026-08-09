@@ -1,3 +1,4 @@
+import type { IconDefinition } from "./types"
 
 export const languageIcons: IconDefinition[] = [
   {
@@ -89,6 +90,10 @@ export const languageIcons: IconDefinition[] = [
     extensions: ["gleam"],
   },
   {
+    name: "glsl_file",
+    extensions: ["glsl", "comp", "geom", "hlsl", "tesc", "tese", "wgsl"],
+  },
+  {
     name: "go_file",
     extensions: ["go"],
   },
@@ -120,7 +125,7 @@ export const languageIcons: IconDefinition[] = [
   },
   {
     name: "javascript_file",
-    extensions: ["cjs", "es6", "jake", "js", "jsm", "jss", "mjs", "pac"],
+    extensions: ["cjs", "es6", "jake", "js", "jsm", "jss", "mjs", "pac", "jsx"],
   },
   {
     name: "julia_file",
@@ -140,7 +145,7 @@ export const languageIcons: IconDefinition[] = [
   },
   {
     name: "mojo_file",
-    extensions: ["mojo", "mojom", "�"],
+    extensions: ["mojo", "mojom"],
   },
   {
     name: "moonscript_file",
@@ -189,7 +194,7 @@ export const languageIcons: IconDefinition[] = [
   },
   {
     name: "reason_react_file",
-    extensions: ["jsx", "re", "rei", "tsx"],
+    extensions: ["re", "rei"],
   },
   {
     name: "rlang_file",
@@ -226,7 +231,7 @@ export const languageIcons: IconDefinition[] = [
   },
   {
     name: "typescript_file",
-    extensions: ["cts", "ts", "tsbuildinfo"],
+    extensions: ["cts", "ts", "tsbuildinfo", "tsx"],
   },
   {
     name: "typst_file",

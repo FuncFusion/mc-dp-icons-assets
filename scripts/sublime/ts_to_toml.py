@@ -38,4 +38,4 @@ def convert_ts_to_toml(input_ts_file, output_toml_file):
     
 
 if __name__ == "__main__":
-    convert_ts_to_toml("defs/resourcePackIcons.ts", "defs/resourcePackIcons.toml")
+    convert_ts_to_toml("defs/languageIcons.ts", "defs/languageIcons.toml")

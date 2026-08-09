@@ -1,3 +1,4 @@
+import type { IconDefinition } from "./types"
 
 export const generalIcons: IconDefinition[] = [
   {
@@ -129,6 +130,14 @@ export const generalIcons: IconDefinition[] = [
     filenames: ["fabric-mod.json"],
   },
   {
+    name: "font_file",
+    extensions: ["font", "font/json", "ttf", "fontdata", "bmap", "eot", "fnt", "fonts", "mrf", "ntf", "odttf", "otf", "pft", "sui", "suit", "ttc", "woff", "woff2"],
+  },
+  {
+    name: "font_folder",
+    foldernames: ["font", "fonts"],
+  },
+  {
     name: "forge_file",
     filenames: ["accesstransformer.cfg", "mcmod.info", "mods.toml"],
   },
@@ -225,6 +234,10 @@ export const generalIcons: IconDefinition[] = [
     filenames: ["jsconfig.json"],
   },
   {
+    name: "json_file",
+    extensions: ["json", "har", "json5", "jsonc", "jsonl", "jsonld", "ndjson", "pdt", "topojson", "webmanifest"],
+  },
+  {
     name: "julia_folder",
     foldernames: [".julia"],
   },
@@ -314,6 +327,10 @@ export const generalIcons: IconDefinition[] = [
     name: "pdf_file",
     extensions: ["pdf", "rtf"],
     filenames: ["CODE_OF_CONDUCT", "CODE_OF_CONDUCT.md", "CODE_OF_CONDUCT.txt"],
+  },
+  {
+    name: "pixi_file",
+    filenames: ["pixi.toml", "pixi-global.toml"],
   },
   {
     name: "playdate_file",
