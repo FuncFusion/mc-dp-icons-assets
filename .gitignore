@@ -4,3 +4,6 @@ temp**
 mc-dp-icons-sublime/
 default_syntaxes/
 external_syntaxes/
+# Neovim
+nanoemoji/
+picosvg/

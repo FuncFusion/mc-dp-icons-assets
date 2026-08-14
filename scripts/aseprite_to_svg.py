@@ -1,9 +1,15 @@
 import aseprite
 
 
-scale = 50
-# svg = '<svg viewBox="0 0 {0} {1}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
-svg = '<svg viewBox="0 0 {0} {1}" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+post_align_scale = 1
+pre_align_scale = 50
+CRISP = True
+
+if CRISP:
+    svg = '<svg viewBox="0 0 {0} {1}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+else:
+    svg = '<svg viewBox="0 0 {0} {1}" xmlns="http://www.w3.org/2000/svg">{2}</svg>'
+    
 rect_template = '<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#{fill}" {opacity}/>'
 group_start_template = '<g {opacity}>'
 
@@ -62,6 +68,10 @@ def convert(path):
         else:
             element_data.append(rect)
 
+    minx *= pre_align_scale
+    maxx *= pre_align_scale
+    miny *= pre_align_scale
+    maxy *= pre_align_scale
     true_width = maxx - minx
     true_height = maxy - miny
     max_side = max(true_width, true_height)
@@ -78,24 +88,23 @@ def convert(path):
             elements += "</g>"
 
         elif type == "rect":
-            element["x"] = (element["x"] - minx + offsetx) * scale
-            element["y"] = (element["y"] - miny + offsety) * scale
-            element["w"] *= scale
-            element["h"] *= scale
+            element["x"] = (element["x"]*pre_align_scale - minx + offsetx) * post_align_scale
+            element["y"] = (element["y"]*pre_align_scale - miny + offsety) * post_align_scale
+            element["w"] *= pre_align_scale * post_align_scale
+            element["h"] *= pre_align_scale * post_align_scale
             elements += rect_template.format(**element)
 
-    return svg.format(max_side*scale, max_side*scale, elements)
+    return svg.format(max_side*post_align_scale, max_side*post_align_scale, elements)
 
 
 # print(convert("../icons/current/misc_file.aseprite"))
 
 if __name__ == "__main__":
     from os import walk, getcwd
-    from os.path import abspath
-    import webbrowser
+    from os.path import abspath, join
 
-    icons_path = "icons/current/"
-    icons_path += "/" if not icons_path.endswith("/") else ""
+    icons_path = "icons/current"
+    out_path = "neovim/svgs"
     # in case script is not running from the root of repo
     if getcwd().endswith("scripts"):
         icons_path = "../" + icons_path
@@ -103,8 +112,7 @@ if __name__ == "__main__":
     for root, __, files in walk(icons_path):
         for filename in files:
             if filename.endswith(".aseprite"):
-                svg_path = icons_path+filename[:-9]+".svg"
+                svg_path = join(out_path, filename[:-9]+".svg")
                 with open(svg_path, "w")as f:
-                    f.write(convert(icons_path+filename))
-                    # webbrowser.open("file:///"+abspath(svg_path).replace("\\", "/"))
+                    f.write(convert(join(icons_path, filename)))
                 print("Processed " + filename)
